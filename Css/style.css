@@ -115,6 +115,13 @@ body
     
     
 }
+.header .bottun .b1:hover ,.header .bottun .b2:hover
+{
+    
+    background-color: #3399ff;
+    color: white;
+    
+}
 
 .header .bottun .b2
 {
@@ -155,7 +162,7 @@ body
     width: 30.3333%;
     height: 300px;
     margin: 10px;
-    border: 1px solid red;
+  
     float: left
     
 }
