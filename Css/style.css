@@ -1,0 +1,191 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 5000px;
+    
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+
+.container
+{
+    
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  
+}
+
+
+/*   Start Header*/
+.logo
+{
+    color: white;
+    background: none;
+    float: left;    
+    width: 43%;
+          
+    
+}
+.header .fix
+{
+       
+       position: fixed;
+       width: 1300px;
+       overflow: hidden;
+    
+}
+.header .logo img {
+    
+   
+  
+}
+
+
+.header ul 
+{
+    overflow: hidden;
+ 
+    width: 45%;
+    list-style: none;
+  
+    
+    
+}
+.header ul li a:hover
+{
+    
+    text-decoration-line: underline;
+    text-decoration-color: aquamarine;
+    
+}
+.header ul li a
+{
+    
+   color: white;
+   text-decoration: none;
+    
+}
+.header ul li
+{
+    margin: 10px;
+    float: left;
+  
+    
+}
+
+.header
+{
+    margin: 0;
+    background-image: url(../images/background/background1.webp);
+    height: 600px;
+    background-size: cover;
+}
+
+.header h2 ,.header p
+{
+    
+    text-align: center;
+    color: white;
+    
+}
+.header h2
+{
+    margin-top: 250px;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.header .bottun
+{
+    text-align: center;
+   
+    
+    
+}
+.header .bottun .b1 ,.header .bottun .b2
+{
+    background-color: white;
+    width: 130px;
+    padding: 10px;
+   border: 0;
+   height: 50px;
+    
+    
+}
+
+.header .bottun .b2
+{
+    color: white;
+    background-color: #3399ff;
+    
+}
+/* End Header */
+
+
+/* Start Layout */
+
+
+.layout .lay
+{
+    
+    overflow:hidden; 
+        
+    
+}
+.layout
+{
+    
+    height: 600px;
+    
+}
+.layout .lay h2
+{
+    margin-top: 100px;
+    text-align: center;
+   
+    
+    
+}
+.layout .lay > div
+{
+    text-align: center;
+    width: 30.3333%;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid red;
+    float: left
+    
+}
+.layout .lay  i
+{
+    color: #3399ff;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.layout .lay >div p
+{
+    
+    margin: 10px;
+    margin-top: 10px;
+    
+}
+.layout .lay >div h2
+{
+    
+    margin-top: 10px;
+}
+
+
+.layout .lay >div  p a
+{
+    
+    
+    color: #3399ff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+/* End  Layout */
