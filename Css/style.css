@@ -413,7 +413,11 @@ body
 
 /* Start  Service*/
 
-
+.services
+{
+    
+    height: 800px;
+}
 .services .content .ser
 {
     
@@ -476,7 +480,7 @@ body
 {
 font-size: 50px;
 color: #3399ff;
-margin: 30px 0 0 45px;
+margin: 30px 0 0 40px;
 
     
     
@@ -513,3 +517,282 @@ margin: 30px 0 0 45px;
 
 
 /* End  Service*/
+
+
+/* Start  Choose*/
+
+
+.choose
+{
+    height: 700px;
+    background-color: #eee;
+}
+.choose .container .c2 p
+{
+  line-height: 1.4;   
+  display: inline;
+    
+}
+.choose .container .c2 i
+{
+    font-size: 30px;
+   color: #3399ff;
+   display: inline;    
+}
+
+.choose .container .c1,.choose .container .c2
+
+{
+   float: left; 
+    width: 49%;
+    margin: 50px 0 5px 5px;;
+    
+}
+.choose .container .c2 img
+{
+    
+    width: 100%;
+}
+/* End  Choose*/
+
+
+
+/* Start   Section */
+
+
+.section
+{
+    height: 300px;
+    background-image: url("../images/background/background2.webp");
+    background-size: cover;
+   
+}
+
+
+.section .container .cin
+{
+    
+    margin-left: 90px;
+    overflow: hidden;
+    
+    
+}
+.section .container .cin .s
+{
+    text-align: center;
+    float: left;
+    width: 20%;
+    margin: 100px 0 0 30px;;
+    
+    
+}
+.section .container .cin .s i
+{
+    color:#6195ff;
+    font-size: 30px;
+}
+
+.section .container .cin .s p ,
+.section .container .cin .s h2
+{
+    
+color: white;    
+    
+    
+}
+/* End  Section*/
+
+
+
+
+/*         Start    Pricing*/
+
+
+.Pricing 
+{
+    height: 750px;
+    
+}
+.Pricing .p_t
+{
+    
+    
+   overflow: hidden;
+   
+    
+    
+}
+
+.Pricing .p_t .p1
+{
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    width: 25%;
+    height: 400px;
+    float: left;
+    margin-left: 80px;
+    border: 1px solid #999999;
+    
+}
+
+.Pricing .p_t .p1:hover
+{
+    
+    color: #fff;
+    
+}
+.Pricing .p_t .p1:hover:after
+{
+    z-index: -1;
+    height: 100%;
+}
+.Pricing .p_t .p1:after
+{
+    
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: black;
+    transition: height 0.5s;
+    
+    top:0;
+    left: 0;
+    bottom: 0;
+    
+    
+    
+    
+}
+
+
+.Pricing .p_t .p1 h2
+{
+    
+
+    margin-top: 20px;
+  
+}
+.Pricing .p_t .p1 .h1 span
+{
+    
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.Pricing .p_t .p1 .h1
+{
+    
+    padding: 20px 0;
+    border: 2px solid #3399ff;
+    width: 130px;
+    margin: 20px auto;
+    border-radius: 50%;
+    
+}
+.Pricing .p_t .p1 p
+{
+    
+    line-height: 1.5;
+    
+}
+.Pricing .p_t .p1 button
+{
+    background:none; 
+     width: 150px;
+    border: 0;
+    color: #3399ff;
+    border: 1px solid #3399ff;
+    padding: 10px;
+}
+/*         End      pricing */
+
+
+/*         Start     Our Team */
+
+
+.our_team .container con1
+.our_team,.our_team .container,.our_team .container .con1
+{
+    
+    height: 750px;
+    
+}
+
+.our_team h2
+{
+    text-align: center;
+    
+    
+}
+.our_team .con2 .imag h3 ,.our_team .con2 .imag p 
+{
+    text-align: center;
+}
+.our_team .con2
+{
+    
+    overflow: hidden;
+    margin-top: 20px;
+    height: 500px;
+}
+
+
+
+
+
+.our_team .con2 .imag
+{
+    padding: 30px 5px 0 5px;
+    margin-left: 30px;
+    float: left;
+    width: 30%;
+    background-color: #eee;
+    position: relative;
+    height: 100%;
+    
+    
+}
+
+.our_team .con2 .imag .imag1
+{
+    
+    top: 0;
+    left: 10px;
+    bottom: 0;
+     z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+ 
+}
+.our_team .con2 .imag:hover
+{
+    opacity: 0.5;
+    
+}
+.our_team .con2 .imag:hover:after
+{
+    height: 100%;
+}
+.our_team .con2 .imag:after
+{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: height 0.5s;
+    width: 100%;
+    height:0;
+    background-color: black;
+   
+  
+    
+}
+
+/*         End      Our Team */
