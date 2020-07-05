@@ -410,3 +410,106 @@ body
     margin: 20px 0 0 10px;
 }
 /* End Featur */
+
+/* Start  Service*/
+
+
+.services .content .ser
+{
+    
+    overflow: hidden;
+    float: left;
+    width: 30.2222%;
+    height: 200px;
+    border:  1px solid #eee ;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+     
+    
+}
+
+.services .content .ser:after
+{
+    content: "";
+    height: 200px;
+    width: 0;
+    transition: width 0.5s;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    right: 0;
+    
+    
+}
+.services .content .ser:hover
+{
+    color: white;
+    
+}
+.services .content .ser:hover:after
+{
+    
+  
+      width:100%;
+    
+     
+      background-color:black;
+      z-index: -1;
+  
+    
+}
+
+.services .content .ser .ser1 ,.services .content .ser .ser2
+{
+    
+    float: left;
+    height: 250px;
+    
+    
+    
+}
+
+.services .content .ser .ser1 i
+{
+font-size: 50px;
+color: #3399ff;
+margin: 30px 0 0 45px;
+
+    
+    
+}
+.services .content .ser .ser1
+{
+   
+    width: 30%;
+    
+}
+
+.services .content .ser .ser2
+{
+    
+    width: 68%;
+    padding: 0;
+    
+}
+
+.services .content .ser .ser2 h2
+{
+  
+    margin:30px 0 10px 0;
+   
+}
+
+.services .content .ser .ser2 p
+
+{
+    line-height: 1.4;
+    margin:0 0 1px 0;
+    
+}
+
+
+/* End  Service*/
