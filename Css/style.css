@@ -31,8 +31,9 @@ body
 }
 .header .fix
 {
+    
        height: 60px;
-     position: fixed;
+        position: fixed;
        width: 100%;
        overflow: hidden;
        z-index: 10;
@@ -128,6 +129,7 @@ body
 
 .header
 {
+   
     margin: 0;
     background-image: url(../images/background/background1.webp);
     height: 600px;
@@ -143,13 +145,15 @@ body
 }
 .header h2
 {
-    margin-top: 250px;
+    margin-top: 0px;
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 15px;
 }
 .header .bottun
 {
+    
+   padding-top:250px;
     text-align: center;
    
     
@@ -939,7 +943,7 @@ margin-left: 3px;
 .logo1 .logo-info .style li a:hover
 {
     
-    visibility: hidden;
+   
     
 }
 .logo1 .logo-info .style li a
@@ -954,6 +958,7 @@ margin-left: 3px;
     color: #fff;
     border-radius: 50%;
     margin: 0 5px;
+    
 
 
 
