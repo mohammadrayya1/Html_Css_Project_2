@@ -31,10 +31,13 @@ body
 }
 .header .fix
 {
-       
-     
-       width: 1300px;
+       height: 60px;
+     position: fixed;
+       width: 100%;
        overflow: hidden;
+       z-index: 10;
+       background-color: rgba(0,0,0,0.4);
+       
     
 }
 .header .logo img {
@@ -902,3 +905,72 @@ margin-left: 3px;
 
 /* End the Resent*/
 
+/* Start Logo*/
+
+
+
+.logo1
+{
+    
+    
+    
+    height: 400px;
+    background-color: #222;
+    
+}
+.logo1 .logo-div,.logo1 .logo-info
+{
+    margin-top: 40px;
+    text-align: center;
+    
+}
+.logo1 .logo-info .style
+{
+    
+    list-style: none;
+    
+}
+
+.logo1 .logo-info .style li
+{
+    display: inline-block;
+    
+}
+.logo1 .logo-info .style li a:hover
+{
+    
+    visibility: hidden;
+    
+}
+.logo1 .logo-info .style li a
+{
+  display: block;
+
+  
+   
+    width: 40px;
+    height: 40px;
+    background-color: #6195ff;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+
+
+
+}
+.logo1 .logo-info .style li a i
+{
+    line-height: 40px;
+    
+    color: white;
+}
+.logo1 .logo-info p
+{
+    
+    margin-top: 50px;
+    color: #999;
+    
+}
+
+
+/* End the Logo*/
