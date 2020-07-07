@@ -2,7 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
-    height: 5000px;
+    height: 7000px;
     
     font-family: 'Varela Round', sans-serif;
 }
@@ -32,7 +32,7 @@ body
 .header .fix
 {
        
-       position: fixed;
+     
        width: 1300px;
        overflow: hidden;
     
@@ -54,13 +54,60 @@ body
     
     
 }
-.header ul li a:hover
+.header ul li a.activ:after
 {
-    
-    text-decoration-line: underline;
-    text-decoration-color: aquamarine;
+     
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #3399ff;
+           
     
 }
+.header ul li a:after
+{
+   
+    
+    display: block;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: #3399ff;
+    transition:  width 0.5s;
+    
+}
+
+.header ul li a:hover:after
+{
+    
+    width: 100%;
+    
+    
+}
+
+.drop_down
+{
+    position: relative;
+    
+    
+}
+
+.drop_down_menu
+{
+    position: absolute;
+    
+}
+
+
+.nav .drop_down .drop_down_menu li a
+{
+    
+    visibility: visible;
+    
+    
+}
+
 .header ul li a
 {
     
@@ -107,20 +154,23 @@ body
 }
 .header .bottun .b1 ,.header .bottun .b2
 {
+    border: 0px;
     background-color: white;
-    width: 130px;
-    padding: 10px;
-   border: 0;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px; 
    height: 50px;
+   cursor: pointer;
+       
     
     
 }
 .header .bottun .b1:hover ,.header .bottun .b2:hover
 {
-    
+    transition: 0.5s;
     background-color: #3399ff;
     color: white;
-    
+    opacity: 0.8;
 }
 
 .header .bottun .b2
@@ -156,15 +206,58 @@ body
     
     
 }
+
+
+
+
+
+.layout .lay > div:after
+{
+    content: "";
+   
+    position: absolute;
+    text-align: center;
+    width: 0;
+    height: 300px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    transition:  width 0.5s;
+  
+}
+
+.layout .lay > div:hover:after
+{
+    width:100%;
+    
+      color: white;
+      background-color:black;
+      z-index: -1;
+       
+    
+}
 .layout .lay > div
 {
+    position: relative;
     text-align: center;
     width: 30.3333%;
     height: 300px;
     margin: 10px;
-  
-    float: left
+    border: 1px solid #eee;
+    float: left;
     
+    
+}
+
+.layout .lay > .L:hover
+{
+    
+   color: white;
+  
+    
+  
 }
 .layout .lay  i
 {
@@ -196,3 +289,614 @@ body
     margin-bottom: 10px;
 }
 /* End  Layout */
+
+
+
+
+
+/* Start  Featur */
+
+
+
+.featur .lay h2
+{
+    
+      
+   margin-top: 100px;
+   text-align: center;
+    
+}
+
+.featur .con
+{
+    
+    position: relative;
+    overflow: hidden;
+    float: left;
+    
+    text-align: center;
+    width: 30.3333%;
+    height: 300px;
+    margin: 10px;
+}
+
+
+
+.featur .lay .con .w:hover
+{
+    
+  z-index: 2;
+    
+    
+    
+}
+.featur .lay .con .L:hover
+{
+    
+    
+    z-index: 1;
+}
+
+.featur .lay .con .L
+{
+    cursor: pointer;
+    
+   position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+     z-index:2;
+    
+}
+.featur .lay .con .L img
+{
+    
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
+
+
+
+.featur .lay .con .w
+{
+    z-index: 1;
+    text-align: center;
+     position: absolute; 
+    height: 300px;
+    margin: 0px;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999999;
+    opacity: 0.8;
+ 
+   
+}
+
+
+
+.featur .lay .con .w h3
+{
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 2px;
+    
+}
+.featur .lay .con  .w p
+{
+    
+    color: #fff;
+    margin: 5px 0 5px 10px;
+    
+}
+
+.featur .lay .con .w i
+{
+    padding: 10px;
+    
+    border: 1px solid #3399ff;
+    background-color: #3399ff;
+    margin: 20px 0 0 10px;
+}
+/* End Featur */
+
+/* Start  Service*/
+
+.services
+{
+    
+    height: 800px;
+}
+.services .content .ser
+{
+    
+    overflow: hidden;
+    float: left;
+    width: 30.2222%;
+    height: 200px;
+    border:  1px solid #eee ;
+    margin: 10px;
+    padding: 0;
+    position: relative;
+     
+    
+}
+
+.services .content .ser:after
+{
+    content: "";
+    height: 200px;
+    width: 0;
+    transition: width 0.5s;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    right: 0;
+    
+    
+}
+.services .content .ser:hover
+{
+    color: white;
+    
+}
+.services .content .ser:hover:after
+{
+    
+  
+      width:100%;
+    
+     
+      background-color:black;
+      z-index: -1;
+  
+    
+}
+
+.services .content .ser .ser1 ,.services .content .ser .ser2
+{
+    
+    float: left;
+    height: 250px;
+    
+    
+    
+}
+
+.services .content .ser .ser1 i
+{
+font-size: 50px;
+color: #3399ff;
+margin: 30px 0 0 40px;
+
+    
+    
+}
+.services .content .ser .ser1
+{
+   
+    width: 30%;
+    
+}
+
+.services .content .ser .ser2
+{
+    
+    width: 68%;
+    padding: 0;
+    
+}
+
+.services .content .ser .ser2 h2
+{
+  
+    margin:30px 0 10px 0;
+   
+}
+
+.services .content .ser .ser2 p
+
+{
+    line-height: 1.4;
+    margin:0 0 1px 0;
+    
+}
+
+
+/* End  Service*/
+
+
+/* Start  Choose*/
+
+
+.choose
+{
+    height: 700px;
+    background-color: #eee;
+}
+.choose .container .c2 p
+{
+  line-height: 1.4;   
+  display: inline;
+    
+}
+.choose .container .c2 i
+{
+    font-size: 30px;
+   color: #3399ff;
+   display: inline;    
+}
+
+.choose .container .c1,.choose .container .c2
+
+{
+   float: left; 
+    width: 49%;
+    margin: 50px 0 5px 5px;;
+    
+}
+.choose .container .c2 img
+{
+    
+    width: 100%;
+}
+/* End  Choose*/
+
+
+
+/* Start   Section */
+
+
+.section
+{
+    height: 300px;
+    background-image: url("../images/background/background2.webp");
+    background-size: cover;
+   
+}
+
+
+.section .container .cin
+{
+    
+    margin-left: 90px;
+    overflow: hidden;
+    
+    
+}
+.section .container .cin .s
+{
+    text-align: center;
+    float: left;
+    width: 20%;
+    margin: 100px 0 0 30px;;
+    
+    
+}
+.section .container .cin .s i
+{
+    color:#6195ff;
+    font-size: 30px;
+}
+
+.section .container .cin .s p ,
+.section .container .cin .s h2
+{
+    
+color: white;    
+    
+    
+}
+/* End  Section*/
+
+
+
+
+/*         Start    Pricing*/
+
+
+.Pricing 
+{
+    height: 750px;
+    
+}
+.Pricing .p_t
+{
+    
+    
+   overflow: hidden;
+   
+    
+    
+}
+
+.Pricing .p_t .p1
+{
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    width: 25%;
+    height: 400px;
+    float: left;
+    margin-left: 80px;
+    border: 1px solid #999999;
+    
+}
+
+.Pricing .p_t .p1:hover
+{
+    
+    color: #fff;
+    
+}
+.Pricing .p_t .p1:hover:after
+{
+    z-index: -1;
+    height: 100%;
+}
+.Pricing .p_t .p1:after
+{
+    
+    
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: black;
+    transition: height 0.5s;
+    
+    top:0;
+    left: 0;
+    bottom: 0;
+    
+    
+    
+    
+}
+
+
+.Pricing .p_t .p1 h2
+{
+    
+
+    margin-top: 20px;
+  
+}
+.Pricing .p_t .p1 .h1 span
+{
+    
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.Pricing .p_t .p1 .h1
+{
+    
+    padding: 20px 0;
+    border: 2px solid #3399ff;
+    width: 130px;
+    margin: 20px auto;
+    border-radius: 50%;
+    
+}
+.Pricing .p_t .p1 p
+{
+    
+    line-height: 1.5;
+    
+}
+.Pricing .p_t .p1 button
+{
+    background:none; 
+     width: 150px;
+    border: 0;
+    color: #3399ff;
+    border: 1px solid #3399ff;
+    padding: 10px;
+}
+/*         End      pricing */
+
+
+/*         Start     Our Team */
+
+
+.team-item:hover:after
+{
+    
+    height: 100%;
+    z-index: -1;
+    
+    
+}
+.team-item:after
+{
+ 
+    content: "";
+    width: 100%;
+    height:0;
+    top:0;
+    left:0;
+    bottom:0; 
+        
+    background-color: #cccccc;
+    transition: height 0.5s;
+    position: absolute
+    
+}
+.team-item
+{
+    margin-left: 70px;
+    text-align: center;
+    width: 24%;
+    float: left;
+  position: relative;
+    padding: 20px 15px;
+
+}
+.team-item .team-img 
+{
+    
+    position: relative;
+    margin: auto;
+    width: 90%;
+    z-index: 1;
+}
+
+.team-over-lay
+{
+    
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility:hidden;
+    
+    
+    
+}
+
+.team-over-lay a
+{
+    margin-left: auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #7ba7ff;
+    color: #fff;
+    
+}
+
+.team-over-lay a i
+{
+    
+    line-height: 40px;
+    
+}
+.team-item .team-img img
+{
+    width: 100%;
+    
+}
+.team-item .team-info-title{
+    margin: 10px 0;
+    color: #222;
+}
+.team-item .team-info-text
+{
+     color: #999;
+     text-transform: uppercase;
+     font-size: 14px;
+    
+}
+
+.team-item:hover .team-over-lay
+{
+    
+   z-index: 1;
+    visibility: visible;
+     opacity: 1;
+}
+
+
+/* End the Team*/
+
+
+
+/*Start the Resent*/
+.resent-news .resent-text
+{
+    
+   padding-top: 40px;
+}
+.resent-news
+{
+    
+    background-color:#eee;
+    
+}
+.resent-news .news-content
+{
+    
+    overflow: hidden;
+}
+
+.resent-news .news-content .resent-news-div
+{
+    
+    float: left;
+    width: 28%;
+    height: 400px;
+    margin: 20px;
+    
+     background-color: white;
+
+    
+    
+}
+
+.resent-news .news-content
+{
+    
+    
+    margin-left: 50px;;
+}
+.resent-news .news-content .resent-news-div .news-imag
+{
+  margin-bottom: 10px;
+}
+.resent-news .news-content .resent-news-div .news-imag img
+{
+    
+    width: 100%;
+    
+    
+}
+.resent-news .news-content .resent-news-div .news-text-info
+{
+    
+    margin-left: 20px;
+}
+.resent-news .news-content .resent-news-div .news-text-info i
+{
+    
+width:20px;
+color :#3399ff;
+margin-left: 3px;
+}
+.resent-news .news-content .resent-news-div .news-text-info span{
+    
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.resent-news .news-content .resent-news-div .news-text-info p
+{
+    
+    color: #999;
+}
+.resent-news .news-content .resent-news-div .news-text-info a
+{
+    
+    text-decoration: none;
+    color: #3399ff;
+    
+}
+/* End the Resent*/
